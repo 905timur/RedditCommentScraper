@@ -1,7 +1,7 @@
 # RedditCommentScraper v1.0
 
 
-This Python script scrapes all comments of any given Reddit user and saves them to a text file in the same directory.
+This Python script scrapes the entire history of any Reddit user and saves it to a text file in the same directory.
 
 
 **-SYSTEM CONFIGURATION-**
