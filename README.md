@@ -87,6 +87,7 @@ For any questions or suggestions, please reach out via the Issues tab in this re
 
 # v1.1.0
 
+## Added
 - Restructured code into RedditScraper class
 - Added comprehensive logging system
 - Implemented progress bar using tqdm
