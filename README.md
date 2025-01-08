@@ -82,3 +82,24 @@ Contributions are welcome! Feel free to submit issues or pull requests to enhanc
 
 ## Contact
 For any questions or suggestions, please reach out via the Issues tab in this repository.
+
+## Changelog
+
+# v1.1.0
+
+- Restructured code into RedditScraper class
+- Added comprehensive logging system
+- Implemented progress bar using tqdm
+- Enhanced error handling and recovery
+- Added rate limiting
+- Improved comment metadata
+- Created dedicated output directory
+- Added timestamp to output files
+- Implemented secure password input
+- Added optional comment limit
+- Improved configuration management
+- Enhanced UTF-8 handling
+- Added type hints
+- Improved code organization and documentation
+- Added detailed logging to file
+- Enhanced user experience with better console output
