@@ -1,22 +1,29 @@
-# RedditCommentScraper v1.0
+# RedditCommentScraper v1.1.0
 
+A Python script to scrape and save comments from a specified Reddit user using the Reddit API via `praw`.
 
-This Python script scrapes the entire history of any Reddit user and saves it to a text file in the same directory.
+## Features
 
+- Authenticate with Reddit using your credentials.
+- Scrape comments from a specific Reddit user.
+- Save comments to a timestamped text file in a structured format.
+- Rate-limiting and error handling to comply with Reddit API guidelines.
+- Progress bar for tracking scraping progress.
 
-**-SYSTEM CONFIGURATION-**
+## Prerequisites
 
-1. Install Python 3
+- Python 3.8 or higher
+- A Reddit account with API credentials (client ID and client secret)
+- `praw`, `requests`, `beautifulsoup4`, `tqdm`
 
-2. Install praw and beautifulsoup4 by running the following code in terminal:
+## Installation
 
-```
-pip install praw
-```
-Do the same command for beautifulsoup4
+1. Clone this repository or copy the script into your project directory.
+2. Install the required Python packages:
+   ```bash
+   pip install praw requests beautifulsoup4 tqdm
 
-
-**-REDDIT CONFIGURATION-**
+## Reddit Configuration
 
 1. Navigate to https://www.reddit.com/prefs/apps
 
@@ -30,27 +37,48 @@ Do the same command for beautifulsoup4
 
 ![image](https://user-images.githubusercontent.com/130249301/234336730-dbe61b3f-ffed-4f1f-ab35-b5fe1239d72c.png)
 
+## Usage
 
-**-SCRIPT CONFIGURATION-**
+1. Run the script using:
 
-1. Add the client ID, secret, username and password to the config.ini file
-
-2. Make sure both the scraper and the config files are in the same directory. 
-
-**-SCRIPT EXECUTION-**
-
-1. In your Windows terminal navigate to the directory where the script and the config files are saved, for example:
-
-
-```
-cd C:\commentScraper
+```bash
+python reddit_scraper.py
 ```
 
-2. Execute the script:
+2. View Output: The scraped comments will be saved in a scraped_comments folder, with the filename format:
 
-
+```bash
+<username>_comments_<timestamp>.txt
 ```
-python commentScraper.py
+
+## Configuration
+
+The script creates a config.ini file in the current directory to store your Reddit credentials securely. You can edit this file manually if needed.
+
+## Logging
+
+Logs are saved in a scraper.log file in the current directory and printed to the console. These logs include:
+
+- Authentication status
+- Comment scraping progress
+- Warnings or errors
+
+## Example Output
+Each comment is saved in the following format:
+```bash
+Comment ID: <id>
+Content: <comment body>
+Subreddit: <subreddit>
+Date: <timestamp>
+Score: <score>
+--------------------------------------------------------------------------------
 ```
 
-3. Input the username you want to scrape and hit enter. 
+## License
+This project is open-source and available under the MIT License.
+
+## Contributing
+Contributions are welcome! Feel free to submit issues or pull requests to enhance functionality or fix bugs.
+
+## Contact
+For any questions or suggestions, please reach out via the Issues tab in this repository.
