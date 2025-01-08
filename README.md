@@ -83,10 +83,9 @@ Contributions are welcome! Feel free to submit issues or pull requests to enhanc
 ## Contact
 For any questions or suggestions, please reach out via the Issues tab in this repository.
 
-## Changelog
+# Changelog
 
 # v1.1.0
-
 ## Added
 - Restructured code into RedditScraper class
 - Added comprehensive logging system
